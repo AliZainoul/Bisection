@@ -14,7 +14,6 @@ double q(double x){return (x*x)-1;};
 double r(double x){return (x*x*x)-(5*x*x)+(3*x)+7;};
 double s(double x){return 1-(x*x);};
 
-
 int main ()
 {
   double delta, epsilon;
@@ -22,32 +21,32 @@ int main ()
   epsilon = 0.00000001 ;
 
 cout << "*** **** **** ****"<< "\n";
-cout << " Function evaluated at " <<bisection(0, 1, f, delta, epsilon)<< " is "
+cout << " Function f evaluated at " <<bisection(0, 1, f, delta, epsilon)<< " is "
 << f(bisection(0, 1, f, delta, epsilon))<<"\n";
 getchar();
 
 cout << "*** **** **** ****"<< "\n";
-cout << " Function evaluated at " <<bisection(1, 3, g, delta, epsilon)<< " is "
+cout << " Function g evaluated at " <<bisection(1, 3, g, delta, epsilon)<< " is "
 << g(bisection(1, 3, g, delta, epsilon))<<"\n";
 getchar();
 
 cout << "*** **** **** ****"<< "\n";
-cout << " Function evaluated at " <<bisection(-2, 1, p, delta, epsilon)<< " is "
+cout << " Function p evaluated at " <<bisection(-2, 1, p, delta, epsilon)<< " is "
 << p(bisection(-2, 1, p, delta, epsilon))<<"\n";
 getchar();
 
 cout << "*** **** **** ****"<< "\n";
-cout << " Function evaluated at " <<bisection(-1, 1, q, delta, epsilon)<< " is "
+cout << " Function q evaluated at " <<bisection(-1, 1, q, delta, epsilon)<< " is "
 << q(bisection(-1, 1, q, delta, epsilon))<<"\n";
 getchar();
 
 cout << "*** **** **** ****"<< "\n";
-cout << " Function evaluated at " <<bisection(0, 3, r, delta, epsilon)<< " is "
+cout << " Function r evaluated at " <<bisection(0, 3, r, delta, epsilon)<< " is "
 << r(bisection(0, 3, r, delta, epsilon))<<"\n";
 getchar();
 
 cout << "*** **** **** ****"<< "\n";
-cout << " Function evaluated at " <<bisection(-3, 3, s, delta, epsilon)<< " is "
+cout << " Function s evaluated at " <<bisection(-3, 3, s, delta, epsilon)<< " is "
 << s(bisection(-3, 3, s, delta, epsilon))<<"\n";
 getchar();
 
